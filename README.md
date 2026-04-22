@@ -1,30 +1,36 @@
-# D-D-Proyecto-C
-Crear un D&amp;D basico en el lenguaje C 
-Activity: AI Dungeon Master – Text Adventure Game Engine
+# D&D in C — Text Adventure Game Engine
 
-Objective:  Design and implement a simple text-based adventure game engine where the user’s decisions determine the game’s outcome using conditional statements (if, else if, else, switch, etc.).
+A text-based dungeon crawler game written in C. The player navigates a dark dungeon, making decisions at each room that determine their fate.
 
- Description:
-You are tasked with creating the logic behind a text-based dungeon crawler game. The user will navigate through different rooms, choose actions, and encounter events such as traps, treasures, or monsters. Based on the player's input, the program must determine what happens next.
+## Gameplay
 
-✅ Requirements:
-The game should include at least 3 decision points, each with multiple choices.
+You wake up in a dark dungeon and must find your way out. Each room presents choices that branch into different outcomes — some lead to victory, others to defeat.
 
-Each choice should lead to a different outcome using nested or chained conditionals.
+```
+You wake up in a dark dungeon. Two doors ahead.
+> 1. Left door  →  sleeping dragon (sneak past or attack it?)
+> 2. Right door →  locked chest   (pick the lock or leave it?)
+```
 
-There should be at least two win conditions and two lose conditions.
+## Features
 
-Implement at least one inventory check using a boolean or list and conditionals.
+- 3+ decision points with multiple choices each
+- 2 win conditions and 2 lose conditions
+- Inventory system (item/key tracking with boolean flags)
+- Enemies, traps, and treasures
+- Organized with functions for each game segment
 
-Use functions to organize parts of the game (optional but encouraged).
+## Tech Stack
 
-📘 Sample Scenario Flow:
-You wake up in a dark dungeon. You see two doors: 1. Go through the left door. 2. Go through the right door. (If left) You enter a room with a sleeping dragon. What do you do? 1. Sneak past it. 2. Attack it. (If right) You find a chest. It's locked. 1. Try to pick the lock. 2. Leave it alone.
-Each path leads to further decisions, and the outcomes depend on choices and possibly variables like hasKey = true or health = 0.
+- **C** — conditionals (`if`, `else if`, `else`, `switch`), functions, standard I/O
 
-📦 Deliverable:
-A fully working C code of the game.
+## Build & Run
 
-Use of if, else, elif or switch statements to control game logic.
+```bash
+gcc -o dungeon "ProyectoD&DElioNahumVeronica.c"
+./dungeon
+```
 
-Clearly commented code.
+## Authors
+
+Elio, Nahum, Veronica
